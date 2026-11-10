@@ -2,6 +2,7 @@ import "./App.css"
 import { createContext, useContext, useEffect, useRef, useState } from "react"
 import type { ReactNode } from "react"
 import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom"
+import profilePhoto from "./assets/profile.jpg"
 
 /* ============ Types ============ */
 
@@ -679,7 +680,7 @@ function About() {
                     </div>
                 </div>
                 <div className="aboutPhoto">
-                    <img src="/profile.jpg" alt={t("photoAlt")} />
+                    <img src={profilePhoto} alt={t("photoAlt")} />
                 </div>
             </div>
         </>
