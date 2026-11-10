@@ -1,0 +1,98 @@
+/* DEFAULT: DARK MODE */
+:root {
+    --text: #cdd9da;
+    --background: #040b0b;
+    --primary: #bef4f4;
+    --secondary: #417f90;
+    --accent: #73d9ed;
+}
+
+/* OVERRIDE: LIGHT MODE */
+[data-theme='light'] {
+    --text: #253132;
+    --background: #f4fbfb;
+    --primary: #0b4141;
+    --secondary: #6fadbe;
+    --accent: #12788c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--background);
+    color: var(--text);
+    font-family: "Manrope";
+    font-size: 16px;
+}
+
+header{
+    padding: 1vh 3% 1vh 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    box-sizing: content-box;
+    font-family: "Anek Telugu";
+    font-weight: 500;
+    font-size: 22px;
+    padding-top: 12px;
+    color: var(--accent);
+}
+
+nav ul{
+    display: flex;
+    gap: 15px;
+}
+
+a{text-decoration: none; color: var(--text);}
+a:hover{color: var(--accent)}
+
+ul{
+    list-style: none;
+}
+
+section{
+    max-width: 95%;
+    margin: auto;
+}
+
+h1{
+    margin: 25px 0px 0px 0px;
+    font-family: "Anek Telugu";
+    color: var(--primary);
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 200;
+    color: var(--secondary);
+}
+
+#hero{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 15px;
+    margin: auto;
+    height: 70vh;
+}
+
+#presentation{
+    grid-column: 1/ span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 0px 0px 15px;
+}
+
+#hero img{
+    grid-column: 2 / span 1;
+    place-self: center;
+    height: 350px;
+    width: 250px;
+}
